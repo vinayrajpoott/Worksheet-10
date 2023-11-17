@@ -1,1 +1,746 @@
-# Worksheet-10
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Chandigarh University</title>
+	<style>
+		html {
+			--mybg: #fe6500;
+			--txtcolor: #fe6500;
+		}
+
+		.mybg {
+			background: var(--mybg) !important;
+		}
+
+		.txtcolor {
+			color: var(--txtcolor) !important;
+		}
+
+		body::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: rgba(254, 101, 0, .3);
+			box-shadow: 0px 0px 5px black inset;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: linear-gradient(45deg, red, var(--mybg));
+			border-radius: 20px;
+			height: 10px;
+		}
+
+		::-webkit-scrollbar-corner {
+			background: red;
+		}
+
+		* {
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+		#outer {
+			min-height: 1000px;
+			width: auto;
+			margin: 0px auto;
+			border: 1px solid black;
+		}
+
+		#header {
+			height: 8%;
+			width: 100%;
+			background-color: black;
+			display: flex;
+		}
+
+		#logo {
+			height: 100%;
+			width: 20%;
+			background-color: black;
+			padding: 5px 40px;
+			box-sizing: border-box;
+		}
+
+
+
+		#menu {
+			height: 100%;
+			width: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-left: 50px;
+		}
+
+		#header1 {
+			height: 6.5%;
+			width: 100%;
+			display: flex;
+		}
+
+		.r {
+			height: 100%;
+			width: 25%;
+			text-align: center;
+			line-height: 30px;
+			padding: 8px 10px;
+			font-size: 18px;
+		}
+
+		.r a {
+			color: black;
+		}
+
+		.r img {
+			height: 30px;
+		}
+
+		#slider {
+			height: 500px;
+			width: 100%;
+			background: url('https://images.news18.com/ibnlive/uploads/2022/01/untitled-design-1-1-16437108253x2.jpg?impolicy=website&width=510&height=356');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#logo img {
+			height: 100%;
+		}
+
+		#menu ul {
+			list-style: none;
+			display: flex;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		#menu li {
+			width: 100px;
+			height: 35px;
+			text-align: center;
+			line-height: 35px;
+			color: white;
+			font-size: 18px;
+			margin-left: 5px;
+			border-radius: 3px;
+			transition: all .5s;
+		}
+
+		#menu li:hover {
+			background: var(--mybg);
+			transition: all .5s;
+		}
+
+		#slider1 {
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, .5);
+			display: flex;
+		}
+
+		#msg-form {
+			height: 90%;
+			width: 40%;
+			background: rgba(255, 255, 255, .5);
+			margin: 25px 50px;
+			border-radius: 5px;
+			padding: 50px;
+		}
+
+		#s2 {
+			height: 90%;
+			width: 60%;
+			text-align: center;
+			color: white;
+			font-size: 18px;
+			padding: 160px 50px 10px 50px;
+		}
+
+		.tt {
+			height: 50px;
+			width: 100%;
+			border-radius: 2px;
+			margin-bottom: 20px;
+			border: none;
+			padding-left: 15px;
+		}
+
+		.ta {
+			height: 80px;
+			resize: none;
+		}
+
+		.btn {
+			color: white;
+			font-size: 18px;
+		}
+
+		#Services {
+			width: auto;
+			height: 150px;
+			background: #e8e8ff;
+			padding: 10px 150px;
+			display: flex;
+		}
+
+		.s1 {
+			line-height: 110px;
+			width: 25%;
+			height: 85%;
+			background: rgba(0, 0, 0, 0.8);
+			margin: 10px;
+			border-radius: 5px;
+			transition: all .5s;
+			color: white;
+			font-size: 1.2rem;
+			text-align: center;
+		}
+
+		.s1:hover {
+			box-shadow: 0px 0px 25px black;
+			background: white;
+			transform: scale(1.1);
+			color: black;
+			transition: all .5s;
+		}
+
+		#content {
+			padding: 15px 100px;
+			min-height: 350px;
+			width: auto;
+			text-align: justify;
+		}
+
+		#Register {
+			height: 500px;
+			width: auto;
+			background: rgba(0, 0, 0, .8);
+		}
+
+		#gallery {
+			min-height: 600px;
+			width: auto;
+			padding: 15px 150px;
+		}
+
+		#contactus {
+			min-height: 500px;
+			width: auto;
+			background: var(--mybg);
+		}
+
+		#team {
+			min-height: 400px;
+			width: auto;
+			background: url(3.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#login {
+			min-height: 400px;
+			width: auto;
+			background: #e8e8ff;
+		}
+
+		#footer1 {
+			height: 300px;
+			width: auto;
+			background: rgba(0, 0, 0, .8);
+			margin-bottom: 1px;
+		}
+
+		#footer2 {
+			height: 300px;
+			width: auto;
+			background: rgba(0, 0, 0, .8);
+			margin-bottom: 1px;
+		}
+
+		.heading {
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		.boxes {
+			height: 100%;
+			width: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+
+		.box {
+			margin: 20px;
+			width: 30%;
+			height: 45%;
+			border: 2px solid black;
+		}
+
+		.c1 {
+			background: url('img/1.jpg');
+			background-size: 100% 100%;
+		}
+
+		.c2 {
+			background: url('img/2.jpg');
+			background-size: 100% 100%;
+		}
+
+		.c3 {
+			background: url('img/3.jpg');
+			background-size: 100% 100%;
+		}
+
+		.c4 {
+			background: url('img/4.jpg');
+			background-size: 100% 100%;
+		}
+
+		.c5 {
+			background: url('img/5.jpg');
+			background-size: 100% 100%;
+		}
+
+		.c6 {
+			background: url('img/6.jpg');
+			background-size: 100% 100%;
+		}
+        .outer-footer{
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            background-color: #3f3f3f;
+
+        }
+
+		.box div {
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, .8);
+			text-align: center;
+			font-size: 2rem;
+			color: white;
+			line-height: 300px;
+			transition: all .5s;
+		}
+
+		.teambg {
+			padding: 15px 100px;
+			background: rgba(0, 0, 0, .5);
+			width: 100%;
+			height: 100%;
+		}
+
+		.teampic {
+			width: 100%;
+			height: 80%;
+			display: flex;
+			justify-Content: space-evenly;
+			border-radius: 40px 40px 0px 0px;
+		}
+
+		.team1 {
+			width: 28%;
+			height: 100%;
+			background: white;
+			border: 10px solid #d5d5d7;
+			border-radius: 40px 40px 0px 0px;
+		}
+
+		.ttop {
+			height: 35%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			border-radius: 40px 40px 0px 0px;
+		}
+
+		.ttop img {
+			transform: translateY(50%);
+			height: 100%;
+			width: 60%;
+			border-radius: 50%;
+			padding: 10px;
+			border: 10px solid #e6e6e6;
+		}
+
+		.tbot {
+			height: 65%;
+			width: 100%;
+			font-size: 1.3rem;
+			text-align: center;
+			background: #f1f1f1;
+			padding-top: 100px;
+		}
+
+		.lot {
+			padding-left: 50px;
+			padding-right: 50px;
+			color: #adadad;
+		}
+
+		.namet {
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.but {
+			margin-top: 10px;
+			color: white;
+			line-height: 50px;
+			height: 50px;
+			background: linear-gradient(45deg, #e6c75e, #f85914)
+		}
+
+		.reg {
+			padding: 20px 0px;
+			width: auto;
+			height: 80%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.con {
+			width: 40%;
+			height: 100%;
+		}
+
+		#conntent {
+			width: 80%;
+			height: 100%;
+			background: rgba(255, 255, 255, .6);
+			font-size: 25px;
+			border-radius: 10px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.input {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 15px;
+			border: 1px solid lightgrey;
+		}
+
+		::placeholder {
+			padding-left: 10px;
+		}
+		.in{
+width:350px;
+height:50px;
+margin-left:25px;
+margin-top:20px;
+padding-left:15px;
+border:1px solid grey;
+border-radius:25px;
+}
+.bt{
+background:#fe6500;
+color:white;
+font-size:20px;
+}
+.t{
+text-align:center;
+margin-top:25px;
+}
+.h{
+width:100%;
+height:70px;
+background:#fe6500;
+border-radius:10px 10px 0px 0px;
+font-size:35px;
+color:white;
+text-align:center;
+line-height:70px;
+}
+#outerr{
+width:80%;
+height:80%;
+margin: auto;
+background:white;
+border-radius:0px 0px 10px 10px;
+}
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+	</style>
+</head>
+
+<body>
+	<div Id="outer">
+		<div id="header">
+			<div id="logo">
+				<img src="logo.jpg" />
+			</div>
+			<div id="menu">
+				<ul>
+					<a href="https://www.cuchd.in/" target="_blank">
+						<li>Home</li>
+					</a>
+					<a href="https://www.cuchd.in/about/"target="_blank">
+						<li>About Us</li>
+					</a>
+					<a href="#">
+						<li>Services</li>
+					</a>
+					<a href="https://www.cuchd.in/contact/" target="_blank">
+						<li>Contact Us</li>
+					</a>
+					<a href="https://www.instagram.com/chandigarhuniversity/" target="_blank">
+						<li>Gallery</li>
+					</a>
+					<a href="https://cucet.cuchd.in/" target="_blank">
+						<li>Login</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<div id="header1">
+			<div class="r">
+				<a href="tel:+917626862200">+91-7626862200</a>
+			</div>
+			<div class="r">
+				<a href="mailto:international@cumail.in">international@cumail.in</a>
+			</div>
+			<div class="r">
+				Welcome to Chandigarh University
+			</div>
+		</div>
+		<div id="slider">
+			<div id="slider1">
+				<div id="msg-form">
+					<form>
+						<input type="text" class="tt" placeholder="Name...." required /><br>
+						<input type="number" class="tt" placeholder="Mobile...." required /><br>
+						<input type="email" class="tt" placeholder="Email...." required /><br>
+						<textarea class="ta tt" placeholder="Message..." required></textarea><br>
+						<input type="submit" class="btn tt mybg" Value="Submit" />
+					</form>
+				</div>
+				<div id="s2">
+					<h1 class="txtcolor" style="font-size:45px">Welcome to Chandigarh University</h1>
+					Chandigarh University (CU) is a top private university located in Mohali, Punjab.<br><br>
+					<a href="https://cucet.cuchd.in/" target="_blank" class="mybg" style="color:white;padding:12px;border-radius:5px;font-size:17px;">
+						Register Now</a>
+				</div>
+			</div>
+		</div>
+		<div id="Services">
+			<div class="s1">Bachelor of Computer Application</div>
+			<div class="s1">Master of Computer Application</div>
+			<div class="s1">Bachelor of Business Administration</div>
+			<div class="s1">Master of Business Administration </div>
+		</div>
+		<div id="Content">
+			<div class="heading txtcolor" style="margin-top: 80px;">About<b> Us</b></div>
+			<p>
+				Chandigarh University (CU) is a top private university located in Mohali, Punjab. Chandigarh University is one of the premier universities in Punjab, accredited with an A+ Grade by NAAC in 2019, becoming the only state-private university of Punjab to be accredited by NAAC. CU is the youngest and the only private university in India to bag an A+ grade in the first round of accreditations. Chandigarh University is ranked at 27th position among all Universities in India in NIRF Ranking 2023. It is ranked 2nd among the top Private Indian Universities in India by QS Asia Rankings 2023. Chandigarh University has also earned a ‘Diamond’ rating from QS I-Gauge.
+
+				Chandigarh University Common Entrance Test(CUCET) is an entrance cum scholarship test for admission to CU. Apart from regular courses, Chandigarh University also offers distance learning and online courses through CUIDOL.				
+			</p>
+		</div>
+		<div id="register">
+			<div class="heading txtcolor">Join with<b> Us</b></div>
+			<div class="reg">
+				<div class="con">
+					<div id="conntent">
+						<div style="margin-bottom:5px;"><U>Reg</u>istration</div>
+						<input class="input" type="text" placeholder="Enter your Name" /><br>
+						<input class="input" type="email" placeholder="Enter Your Email" /><br>
+						<input type="password" class="input" placeholder="Password" /><br>
+						<input type="password" class="input" placeholder="Confirm Password" /><br>
+						<input type="checkbox" /><span style="font-size:16px;">I accept all term and
+							Condition.</span><br>
+						<input type="submit" value="Register Now " style="line-height:40px;" class="input but" />
+					</div>
+				</div>
+				<div class="con">
+					<img src="Sign up-amico.png" height="100%" style="margin-left: 200px;">
+				</div>
+			</div>
+		</div>
+		<div id="gallery">
+			<div class="heading txtcolor">Image<b> Gallery</b></div>
+			<div class="boxes">
+				<div class="box c1">
+					<img src="1.jpg" width="100%" height="100%">
+				</div>
+				<div class="box c2">
+					<img src="2.jpg" width="100%" height="100%">
+				</div>
+				<div class="box c3">
+					<img src="3.jpg" width="100%" height="100%">
+				</div>
+				<div class="box c4">
+					<img src="4.jpg" width="100%" height="100%">
+				</div>
+
+			</div>
+		</div>
+        <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://www.facebook.com/chandigarhuniversitygharuan/"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://x.com/Chandigarh_uni?s=20"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="https://www.linkedin.com/school/chandigarh-university/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="https://github.com/topics/chandigarh-university"><i class="fa-brands fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="https://www.cuchd.in/" target="_blank">Home</a>
+
+					<a href="https://www.cuchd.in/anti-ragging-policy/anti-ragging-policy.php " target="_blank">Anti-Ragging Policy</a>
+
+					<a href="https://www.cuchd.in/about/"target="_blank">About</a>
+
+					<a href="#">Faq</a>
+
+					<a href="https://www.cuchd.in/contact/"target="_blank">Contact</a>
+				</p>
+
+
+			</div>
+        <div class="outer-footer">
+            <p>23MCA20089 &copy; All Right Reservrd </p>
+        </div>
+
+		</footer>
+</body>
+
+</html>
